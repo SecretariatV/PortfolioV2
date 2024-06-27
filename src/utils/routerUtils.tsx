@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { PAGE_DATA } from "./dataUtils";
 import { IRouterType } from "./typeUtils";
 import { Suspense } from "react";
-import { Loading } from "@features/ui";
+import Leading from "@features/ui/leading";
 
 const renderRoutes = (routes: IRouterType[]) => {
   return routes.map(({ title, path, element, children = [] }: IRouterType) => {
@@ -17,7 +17,7 @@ const renderRoutes = (routes: IRouterType[]) => {
 export const PageRouter = () => {
   const PAGE_ROUTER = renderRoutes(PAGE_DATA);
   return (
-    <Suspense fallback={<Loading />}>
+    <Suspense fallback={<Leading effect="0" />}>
       <Routes>{PAGE_ROUTER}</Routes>
     </Suspense>
   );

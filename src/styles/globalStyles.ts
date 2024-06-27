@@ -19,6 +19,10 @@ const GlobalStyles = createGlobalStyle`
 
     /** general **/
 	--white: #fff;
+
+    // Leading Component
+    --loading-bg: #0f0f0f;
+    --loading-color: #0077c0;
 }
 
 * {
@@ -28,7 +32,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
 body {
-    background-color: black;
+    /* background-color: black; */
 }
 `;
 

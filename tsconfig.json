@@ -25,6 +25,7 @@
     "paths": {
       "@assets/*": ["assets/*"],
       "@features/*": ["features/*"],
+      "@machines/*": ["machines/*"],
       "@pages/*": ["pages/*"],
       "@styles/*": ["styles/*"],
       "@utils/*": ["utils/*"]

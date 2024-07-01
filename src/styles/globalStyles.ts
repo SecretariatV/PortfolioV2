@@ -32,7 +32,13 @@ const GlobalStyles = createGlobalStyle`
 }
 
 body {
-    /* background-color: black; */
+    background: url('/white.jpg')
+}
+
+p.logo {
+    font-family: "Dancing Script";
+    font-size: 32px;
+    font-weight: 600;
 }
 `;
 

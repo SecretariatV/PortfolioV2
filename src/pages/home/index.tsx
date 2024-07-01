@@ -15,7 +15,7 @@ const useTimeout = (ms: number) => {
 };
 
 const HomePage = () => {
-  useTimeout(3000);
+  // useTimeout(3000);
   return <div className={S.body}>HomePage</div>;
 };
 

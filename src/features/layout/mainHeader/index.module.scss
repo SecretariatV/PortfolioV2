@@ -1,4 +1,42 @@
 @use "@styles/globalStyles.scss" as G;
 
 .body {
+  height: 80px;
+  width: 100%;
+
+  .wrapper {
+    @include G.mainLayout;
+    padding: 16px 32px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    height: 100%;
+
+    .logo {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      img {
+        height: 32px;
+        aspect-ratio: 1/1;
+      }
+    }
+
+    .root {
+      justify-self: center;
+      align-self: center;
+      background-color: transparent;
+    }
+
+    .mask {
+      border-radius: 40px;
+      background-color: #21212165;
+    }
+
+    .tab {
+      font-family: "Bowlby One SC";
+      letter-spacing: 0.02em;
+    }
+  }
 }

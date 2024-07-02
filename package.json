@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@xstate/react": "^4.1.1",
+    "framer-motion": "^11.2.12",
+    "ovb-navbar": "^0.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.24.0",

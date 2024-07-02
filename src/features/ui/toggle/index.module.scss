@@ -48,6 +48,7 @@
     display: flex;
     position: relative;
     transition: all 350ms ease-in;
+    cursor: pointer;
 
     &::before {
       animation: reverset 350ms forwards;

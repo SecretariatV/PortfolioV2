@@ -19,6 +19,16 @@ const GlobalStyles = createGlobalStyle`
 
     /** general **/
 	--white: #fff;
+
+    // Leading Component
+    --loading-bg: #0f0f0f;
+    --loading-color: #0077c0;
+
+    --text-light-primary: #124d85;
+    --text-light-secondary: #1b98d0;
+
+    --text-dark-primary: #e3ebf6;
+    --text-dark-secondary: #cd6118;
 }
 
 * {
@@ -28,7 +38,31 @@ const GlobalStyles = createGlobalStyle`
 }
 
 body {
-    background-color: black;
+    background: url('/white.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+body:has(#toggle:checked) {
+    background: url('/dark.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+p#logo {
+    font-family: "Dancing Script";
+    font-size: 32px;
+    font-weight: 600;
+}
+
+body p#logo {
+    color: var(--text-light-primary);
+}
+
+body:has(#toggle:checked) p#logo {
+    color: var(--text-dark-primary);
 }
 `;
 

@@ -8,7 +8,7 @@ export const Header = () => {
       <div className={S.wrapper}>
         <div className={S.logo}>
           <img src="./logo.png" alt="" />
-          <p className="logo">OVB</p>
+          <p id="logo">OVB</p>
         </div>
         <Navbar
           fullWidth={false}

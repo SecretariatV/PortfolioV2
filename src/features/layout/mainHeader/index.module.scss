@@ -9,6 +9,7 @@
     padding: 16px 32px;
     display: grid;
     grid-template-columns: auto 1fr auto;
+    align-items: center;
     height: 100%;
 
     .logo {
@@ -37,6 +38,7 @@
     .tab {
       font-family: "Bowlby One SC";
       letter-spacing: 0.02em;
+      transition: color 0.3s ease-in-out;
     }
   }
 }

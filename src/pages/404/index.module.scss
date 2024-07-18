@@ -7,7 +7,7 @@
   min-height: 100vh;
   background-color: var(--loading-bg);
   perspective: 1200px;
-  font-family: "Dancing Script";
+  font-family: "Rubik";
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,5 +85,37 @@
       transform: rotate(calc(var(--swing-x) * -0.25deg));
       background: radial-gradient(40% 40% at 50% 42%, transparent, #000 35%);
     }
+  }
+}
+
+@-webkit-keyframes swing {
+  0% {
+    --swing-x: -100;
+    --swing-y: -100;
+  }
+
+  50% {
+    --swing-y: 0;
+  }
+
+  100% {
+    --swing-y: -100;
+    --swing-x: 100;
+  }
+}
+
+@keyframes swing {
+  0% {
+    --swing-x: -100;
+    --swing-y: -100;
+  }
+
+  50% {
+    --swing-y: 0;
+  }
+
+  100% {
+    --swing-y: -100;
+    --swing-x: 100;
   }
 }

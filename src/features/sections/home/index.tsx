@@ -1,5 +1,5 @@
 import S from "./index.module.scss";
-import {} from "typewriter-effect";
+// import {} from "typewriter-effect";
 
 export const HomeSecton = () => {
   return (

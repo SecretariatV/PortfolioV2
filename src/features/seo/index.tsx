@@ -7,7 +7,7 @@ interface IProps {
   description: string;
 }
 
-const SEO: FC<IProps> = () => {
+const SEO: FC<IProps> = ({ title, type, description }) => {
   const schema = {
     "@context": "https://portfolio-rho-gold-96.vercel.app",
     "@type": "portfolio",
@@ -24,7 +24,7 @@ const SEO: FC<IProps> = () => {
   return (
     <Helmet>
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
-      {/* <title>{title}</title>
+      <title>{title}</title>
       <meta name="description" content={description} />
       <meta
         name="keywords"
@@ -42,16 +42,12 @@ const SEO: FC<IProps> = () => {
         content="https://portfolio-rho-gold-96.vercel.app"
       />
 
-      <meta
-        name="twitter:card"
-        content="https://portfolio-rho-gold-96.vercel.app/avatar.webp"
-      />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta
         name="twitter:image"
         content="https://portfolio-rho-gold-96.vercel.app/avatar.webp"
-      /> */}
+      />
     </Helmet>
   );
 };

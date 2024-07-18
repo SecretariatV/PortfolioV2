@@ -2,7 +2,18 @@
 
 .body {
   width: 100%;
+  @include G.sectionPadding;
 
   .wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .info {
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
   }
 }

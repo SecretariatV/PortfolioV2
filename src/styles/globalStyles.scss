@@ -2,3 +2,7 @@
   max-width: 1440px;
   margin: auto;
 }
+
+@mixin sectionPadding {
+  padding: 120px 40px 60px;
+}

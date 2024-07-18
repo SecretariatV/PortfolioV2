@@ -15,9 +15,11 @@
     "ovb-navbar": "^0.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.5",
     "react-router-dom": "^6.24.0",
     "sass": "^1.77.4",
     "styled-components": "^6.1.11",
+    "typewriter-effect": "^2.21.0",
     "xstate": "^5.14.0"
   },
   "devDependencies": {

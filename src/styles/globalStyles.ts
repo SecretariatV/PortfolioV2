@@ -29,6 +29,10 @@ const GlobalStyles = createGlobalStyle`
 
     --text-dark-primary: #e3ebf6;
     --text-dark-secondary: #cd6118;
+
+    /** button */
+    --button-bg-primary: #040834;
+    --button-bg-secondary: #ff014f;
 }
 
 * {
@@ -57,12 +61,24 @@ p#logo {
     font-weight: 600;
 }
 
-body p#logo {
+body {
     color: var(--text-light-primary);
 }
 
-body:has(#toggle:checked) p#logo {
+body:has(#toggle:checked) {
     color: var(--text-dark-primary);
+}
+
+h2 {
+    font-family: "Bowlby One SC";
+    font-size: 60px;
+    font-weight: 400;
+}
+
+h3 {
+ font-family: "Rubik";
+ font-size: 30px;
+ font-weight: 500;
 }
 `;
 

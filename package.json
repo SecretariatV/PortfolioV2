@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && npm run generate-sitemap",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-sitemap": "node generate-sitemap.js"
   },
   "dependencies": {
     "@xstate/react": "^4.1.1",
@@ -18,11 +19,14 @@
     "react-helmet-async": "^2.0.5",
     "react-router-dom": "^6.24.0",
     "sass": "^1.77.4",
+    "sitemap": "^8.0.0",
     "styled-components": "^6.1.11",
+    "ts-node": "^10.9.2",
     "typewriter-effect": "^2.21.0",
     "xstate": "^5.14.0"
   },
   "devDependencies": {
+    "@types/node": "^20.14.11",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",

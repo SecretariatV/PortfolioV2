@@ -1,3 +1,19 @@
+$breakpoints: (
+  "xxm": 360px,
+  "xm": 540px,
+  "sm": 768px,
+  "md": 1024px,
+  "lg": 1280px,
+  "xl": 1440px,
+  "xxl": 1920px,
+);
+
+@mixin breakpoint($name) {
+  @media (max-width: map-get($breakpoints, $name)) {
+    @content;
+  }
+}
+
 @mixin mainLayout {
   max-width: 1440px;
   margin: auto;
@@ -5,4 +21,24 @@
 
 @mixin sectionPadding {
   padding: 120px 40px 60px;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  width: 100%;
+  font-family: "Bowlby One SC";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+
+  @include breakpoint("sm") {
+    font-size: 4rem;
+  }
+
+  @include breakpoint("xm") {
+    font-size: 2rem;
+  }
 }

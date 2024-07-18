@@ -1,3 +1,4 @@
+import S from "./index.module.scss";
 import { IBasicProps } from "@utils/typeUtils";
 import { Component, ErrorInfo } from "react";
 
@@ -32,7 +33,7 @@ class ErrorBoundary extends Component<IProps, IState> {
       return (
         <>
           <h1>Something went wrong.</h1>
-          <details style={{ whiteSpace: "pre-wrap" }}>
+          <details className={S.details}>
             {this.state.error && this.state.error.toString()}
             <br />
             {this.state.errorInfo?.componentStack}

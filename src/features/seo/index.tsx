@@ -8,22 +8,22 @@ interface IProps {
 }
 
 const SEO: FC<IProps> = ({ title, type, description }) => {
-  // const schema = {
-  //   "@context": "https://portfolio-rho-gold-96.vercel.app",
-  //   "@type": "portfolio",
-  //   name: "Oliver Boucher",
-  //   url: "https://portfolio-rho-gold-96.vercel.app",
-  //   sameAs: [
-  //     "https://github.com/SecretariatV",
-  //     "https://www.frontendmentor.io/profile/SecretariatV",
-  //   ],
-  //   jobTitle: "Frontend Developer",
-  //   description:
-  //     "I am Oliver Boucher, a creative front-end developer who pioneered a new path through self-taught with a passion and love for programming that no one can match.",
-  // };
+  const schema = {
+    "@context": "https://portfolio-rho-gold-96.vercel.app",
+    "@type": "portfolio",
+    name: "Oliver Boucher",
+    url: "https://portfolio-rho-gold-96.vercel.app",
+    sameAs: [
+      "https://github.com/SecretariatV",
+      "https://www.frontendmentor.io/profile/SecretariatV",
+    ],
+    jobTitle: "Frontend Developer",
+    description:
+      "I am Oliver Boucher, a creative front-end developer who pioneered a new path through self-taught with a passion and love for programming that no one can match.",
+  };
   return (
     <Helmet>
-      {/* <script type="application/ld+json">{JSON.stringify(schema)}</script> */}
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta
@@ -48,6 +48,7 @@ const SEO: FC<IProps> = ({ title, type, description }) => {
         name="twitter:image"
         content="https://portfolio-rho-gold-96.vercel.app/avatar.webp"
       />
+      <link rel="canonical" href="https://portfolio-rho-gold-96.vercel.app" />
     </Helmet>
   );
 };

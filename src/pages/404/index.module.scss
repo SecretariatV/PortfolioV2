@@ -1,0 +1,89 @@
+:root {
+  --swing-x: 0;
+  --swing-y: 0;
+}
+
+.body {
+  min-height: 100vh;
+  background-color: var(--loading-bg);
+  perspective: 1200px;
+  font-family: "Dancing Script";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: #fafafa;
+
+  p {
+    font-weight: 100;
+  }
+
+  &_title {
+    -webkit-animation: swing 2s infinite alternate ease-in-out;
+    animation: swing 2s infinite alternate ease-in-out;
+    font-size: clamp(5rem, 40vmin, 20rem);
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    margin-bottom: 1rem;
+    letter-spacing: 1rem;
+    transform: translate3d(0, 0, 0vmin);
+    --x: calc(50% + (var(--swing-x) * 0.5) * 1%);
+    background: radial-gradient(#e6e6e6, #7a7a7a 45%) var(--x) 100%/200% 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &::after {
+      -webkit-animation: swing 4s infinite alternate ease-in-out;
+      animation: swing 4s infinite alternate ease-in-out;
+      content: "404";
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #000;
+      filter: blur(1.5vmin);
+      transform: scale(1.05) translate3d(0, 12%, -10vmin)
+        translate(
+          calc((var(--swing-x, 0) * 0.05) * 1%),
+          calc((var(--swing-y) * 0.05) * 1%)
+        );
+    }
+  }
+
+  .info {
+    text-align: center;
+    line-height: 1.5;
+    max-width: clamp(16rem, 90vmin, 25rem);
+
+    p {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.cloak {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+
+  &_container {
+    height: 250vmax;
+    width: 250vmax;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &_body {
+      animation: swing 4s infinite alternate-reverse ease-in-out;
+      height: 100%;
+      width: 100%;
+      transform-origin: 50% 30%;
+      transform: rotate(calc(var(--swing-x) * -0.25deg));
+      background: radial-gradient(40% 40% at 50% 42%, transparent, #000 35%);
+    }
+  }
+}

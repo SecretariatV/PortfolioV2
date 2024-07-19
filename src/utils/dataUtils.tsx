@@ -7,7 +7,7 @@ const LazyErrorPage = lazy(() => import("@pages/404"));
 
 export const PAGE_DATA: IRouterType[] = [
   {
-    title: "Page Layout",
+    title: "Page  Layout",
     path: "/PortfolioV2",
     element: <LazyMainLayout />,
     children: [

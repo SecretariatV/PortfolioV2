@@ -23,13 +23,14 @@ const SEO: FC<IProps> = ({ title, type, description }) => {
   };
   return (
     <Helmet>
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta
         name="keywords"
         content="react, frontend, front end, front-end, developer, frontend developer, front-end developer, engineer, frontend engineer, front-end engineer, oliver, boucher, oliver boucher, remote"
       />
+      <meta name="Oliver Boucher" />
+
       <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
@@ -41,6 +42,7 @@ const SEO: FC<IProps> = ({ title, type, description }) => {
         property="og:url"
         content="https://portfolio-rho-gold-96.vercel.app"
       />
+      <meta property="og:site_name" content="Oliver Boucher" />
 
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
@@ -49,6 +51,8 @@ const SEO: FC<IProps> = ({ title, type, description }) => {
         content="https://portfolio-rho-gold-96.vercel.app/avatar.webp"
       />
       <link rel="canonical" href="https://portfolio-rho-gold-96.vercel.app" />
+
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
     </Helmet>
   );
 };

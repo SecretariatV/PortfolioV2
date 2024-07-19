@@ -43,14 +43,14 @@ const GlobalStyles = createGlobalStyle`
 }
 
 body {
-    background: url('/white.webp');
+    background: url('./white.webp');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 
 body:has(#toggle:checked) {
-    background: url('/dark.webp');
+    background: url('./dark.webp');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;

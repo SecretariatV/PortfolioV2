@@ -28,7 +28,7 @@ const SEO: FC<IProps> = () => {
       <meta
         name="keywords"
         content="react, frontend, front end, front-end, developer, frontend developer, front-end developer, engineer, frontend engineer, front-end engineer, oliver, boucher, oliver boucher, remote"
-      />
+      />1
       <meta name="Oliver Boucher" />
 
       <meta property="og:type" content={type} />

@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Crawl-delay: 10
+
 Disallow: /private/
 Disallow: /tmp/
 

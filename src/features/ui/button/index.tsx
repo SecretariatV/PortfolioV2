@@ -1,8 +1,14 @@
 import { FC } from "react";
 import * as S from "./index.styled";
 
-interface IProps {}
+interface IProps {
+  title: string;
+}
 
-export const Button: FC<IProps> = () => {
-  return <S.Container>Button</S.Container>;
+export const Button: FC<IProps> = ({ title }) => {
+  return (
+    <S.Container>
+      <span>{title}</span>
+    </S.Container>
+  );
 };

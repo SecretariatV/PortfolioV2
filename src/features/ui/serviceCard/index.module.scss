@@ -1,0 +1,30 @@
+.body {
+  display: grid;
+  grid-template-areas: "icon title" "icon content";
+  grid-row-gap: 12px;
+  grid-column-gap: 18px;
+
+  &_icon {
+    grid-area: icon;
+    width: 70px;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    border-radius: 6px;
+    background-color: #212529;
+  }
+
+  &_title {
+    grid-area: title;
+    font-size: 20px;
+    font-family: "Black Ops One", system-ui;
+    letter-spacing: 2px;
+  }
+
+  &_content {
+    grid-area: content;
+    font-size: 16px;
+    opacity: 0.8;
+    font-family: "Rubik", sans-serif;
+  }
+}

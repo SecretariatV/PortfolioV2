@@ -1,0 +1,22 @@
+.cursor {
+  display: inline-block;
+  opacity: 1;
+}
+
+.body {
+  display: flex;
+}
+
+.title {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 5px;
+    z-index: -1;
+  }
+}
+// #0693e3

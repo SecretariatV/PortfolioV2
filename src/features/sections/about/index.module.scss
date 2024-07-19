@@ -1,0 +1,47 @@
+@use "@styles/globalStyles.scss" as G;
+
+.body {
+  width: 100%;
+  @include G.sectionPadding;
+
+  background-color: rgba($color: #000000, $alpha: 0.2);
+
+  &_wrapper {
+    display: grid;
+    place-items: center;
+    max-width: 1440px;
+    margin: auto;
+    grid-template-rows: auto 1fr;
+    gap: 32px;
+  }
+
+  &_title {
+    position: relative;
+  }
+
+  &_info {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    gap: 40px;
+
+    h4 {
+      font-size: 32px;
+      font-family: "Rubik", sans-serif;
+      font-weight: 500;
+
+      span {
+        font-weight: 800;
+        color: var(--button-bg-secondary);
+      }
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 24px;
+    }
+
+    img {
+      justify-self: center;
+    }
+  }
+}

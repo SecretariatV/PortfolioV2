@@ -5,15 +5,27 @@
   @include G.sectionPadding;
 
   .wrapper {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
     .info {
+      align-self: center;
       h2 {
         margin-bottom: 20px;
       }
+
+      button {
+        margin-top: 50px;
+      }
+    }
+
+    &_avatar {
+      width: 400px;
+      aspect-ratio: 1/1;
+      border-radius: 100%;
+      justify-self: center;
     }
   }
 }

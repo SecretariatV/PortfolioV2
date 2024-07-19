@@ -22,7 +22,7 @@ const MainLayout = () => {
   useTimeout(3000);
   return (
     <>
-      <Leading effect="-100vh" />
+      <Leading effect="-100%" />
       <div className={S.body}>
         <Header />
         <Outlet />

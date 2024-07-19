@@ -1,3 +1,4 @@
+import { IconNames } from "@assets/icon/icons";
 import { ReactNode } from "react";
 
 export interface IRouterType {
@@ -9,4 +10,15 @@ export interface IRouterType {
 
 export interface IBasicProps {
   children?: ReactNode;
+}
+
+export interface IPropsService {
+  title: string;
+  content: string;
+  icon: IconNames;
+}
+
+export interface ISkillType {
+  title: string;
+  icon: string;
 }

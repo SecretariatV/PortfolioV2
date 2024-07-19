@@ -30,7 +30,7 @@ async function generateSitemap() {
 
     console.log("Sitemap successfully created!");
   } catch (err) {
-    console.error("Error generating sitem ap:", err);
+    console.error("Error generating sitemap:", err);
   }
 }
 

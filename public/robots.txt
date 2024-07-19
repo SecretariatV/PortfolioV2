@@ -4,4 +4,4 @@ Allow: /
 Disallow: /private/
 Disallow: /tmp/
 
-Sitemap: https://portfolio-rho-gold-96.vercel.app/sitemap.xml
+Sitemap: https://ovb-portfolio.vercel.app/sitemap.xml

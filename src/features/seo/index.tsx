@@ -9,10 +9,10 @@ interface IProps {
 
 const SEO: FC<IProps> = () => {
   const schema = {
-    "@context": "https://portfolio-rho-gold-96.vercel.app",
+    "@context": "https://ovb-portfolio.vercel.app",
     "@type": "portfolio",
     name: "Oliver Boucher",
-    url: "https://portfolio-rho-gold-96.vercel.app",
+    url: "https://ovb-portfolio.vercel.app",
     sameAs: [
       "https://github.com/SecretariatV",
       "https://www.frontendmentor.io/profile/SecretariatV",
@@ -36,11 +36,11 @@ const SEO: FC<IProps> = () => {
       <meta property="og:description" content={description} />
       <meta
         property="og:image"
-        content="https://portfolio-rho-gold-96.vercel.app/avatar.webp"
+        content="https://ovb-portfolio.vercel.app/avatar.webp"
       />
       <meta
         property="og:url"
-        content="https://portfolio-rho-gold-96.vercel.app"
+        content="https://ovb-portfolio.vercel.app"
       />
       <meta property="og:site_name" content="Oliver Boucher" />
 
@@ -48,9 +48,9 @@ const SEO: FC<IProps> = () => {
       <meta name="twitter:description" content={description} />
       <meta
         name="twitter:image"
-        content="https://portfolio-rho-gold-96.vercel.app/avatar.webp"
+        content="https://ovb-portfolio.vercel.app/avatar.webp"
       />
-      <link rel="canonical" href="https://portfolio-rho-gold-96.vercel.app" /> */}
+      <link rel="canonical" href="https://ovb-portfolio.vercel.app" /> */}
 
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
     </Helmet>

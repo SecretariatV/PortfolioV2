@@ -17,5 +17,4 @@ export default defineConfig({
       "@utils": "/src/utils",
     },
   },
-  base: "/PortfolioV2/",
 });

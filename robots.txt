@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /private/
+Disallow: /tmp/
+
+Sitemap: https://ovb-portfolio.vercel.app/sitemap.xml

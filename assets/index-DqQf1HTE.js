@@ -1,4 +1,4 @@
-import{d,r as c,j as e,A as k,L as C,O as N}from"./index-DwHBZWlG.js";const A=d.div`
+import{d,r as c,j as e,A as k,L as C,O as N}from"./index-BOsumX6v.js";const A=d.div`
   border-radius: 8px;
   background-color: ${({$bgColor:t})=>t};
   width: ${({$width:t})=>t};

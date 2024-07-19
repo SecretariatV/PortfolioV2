@@ -22,3 +22,10 @@ export interface ISkillType {
   title: string;
   icon: string;
 }
+
+export interface IPortfolioType {
+  id: number;
+  img: string;
+  title: string;
+  type: string;
+}

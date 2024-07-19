@@ -110,6 +110,11 @@ h3 {
     font-size: 30px;
     font-weight: 700;
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+}
 `;
 
 export default GlobalStyles;

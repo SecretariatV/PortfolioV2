@@ -2,7 +2,7 @@ import S from "./index.module.scss";
 
 const ErrorPage = () => {
   return (
-    <div className={S.body}>
+    <div className={S.body} id="error404">
       <h3 className={S.body_title}>404</h3>
       <div className={S.cloak}>
         <div className={S.cloak_container}>

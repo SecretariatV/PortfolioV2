@@ -12,13 +12,14 @@ export const Header = () => {
         </div>
         <Navbar
           fullWidth={false}
-          width={500}
+          width={700}
           height={40}
           activeColor="#20c997"
           color="#000"
           dataLists={[
             { value: "home", label: "Home" },
             { value: "about", label: "About" },
+            { value: "service", label: "Services" },
             { value: "portfolio", label: "Portfolio" },
             { value: "resume", label: "Resume" },
             { value: "contact", label: "Contact" },

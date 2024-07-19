@@ -1,5 +1,10 @@
 import { lazy } from "react";
-import { IPropsService, IRouterType, ISkillType } from "./typeUtils";
+import {
+  IPortfolioType,
+  IPropsService,
+  IRouterType,
+  ISkillType,
+} from "./typeUtils";
 import reactIcon from "@assets/skills/react.webp";
 import tsIcon from "@assets/skills/typescript.webp";
 import jsIcon from "@assets/skills/javascript.webp";
@@ -20,6 +25,12 @@ import vitestIcon from "@assets/skills/vitest.webp";
 import jestIcon from "@assets/skills/jest.webp";
 import figmaIcon from "@assets/skills/figma.webp";
 import githubIcon from "@assets/skills/github.webp";
+import portfolio from "@assets/projects/portfolio.webp";
+import covault from "@assets/projects/covault.webp";
+import pioneerwhite from "@assets/projects/pioneer_doc.webp";
+import strangepeople from "@assets/projects/strangepeople.webp";
+import pomodoro from "@assets/projects/pomodoro.webp";
+import pioneer from "@assets/projects/pioneer.webp";
 
 const LazyMainLayout = lazy(() => import("@features/layout/mainLayout"));
 const LazyHomePage = lazy(() => import("@pages/home"));
@@ -174,4 +185,23 @@ const SKILL_LIST: ISkillType[] = [
   },
 ];
 
-export { PAGE_DATA, ABOUT_SELF_DATA, SERVICES_DATA, SKILL_LIST };
+const AMOUT_ME: string =
+  "Meet Oliver Boucher, a creative front-end developer who has forged his own path through self-taught expertise and an unparalleled passion for programming. With a meticulous eye for detail, Oliver ensures that every project operates flawlessly. His proficiency spans React, TypeScript, and SCSS, enabling him to craft exceptional user experiences. Oliver's interests aren't confined to the front-end; he delves into back-end technologies, bringing a holistic approach to his projects. Recently, he has developed a keen interest in web3, exploring the cutting-edge of decentralized web technologies. Oliver's dedication to continuous learning and innovation sets him apart, making him a valuable asset in the ever-evolving world of web development.";
+
+const PORTFOLIOS: IPortfolioType[] = [
+  { id: 0, img: portfolio, title: "Portfolio", type: "project" },
+  { id: 2, img: covault, title: "Covault", type: "web" },
+  { id: 3, img: pioneerwhite, title: "Pioneer Whitepaper", type: "web" },
+  { id: 4, img: strangepeople, title: "Strange People", type: "web3" },
+  { id: 5, img: pomodoro, title: "Pomodoro Clock", type: "project" },
+  { id: 6, img: pioneer, title: "Pioneer regendary", type: "web3" },
+];
+
+export {
+  PAGE_DATA,
+  ABOUT_SELF_DATA,
+  SERVICES_DATA,
+  SKILL_LIST,
+  AMOUT_ME,
+  PORTFOLIOS,
+};

@@ -1,6 +1,29 @@
+import { useRef } from "react";
 import S from "./index.module.scss";
+import { useGSAP } from "@gsap/react";
+import { Splittext } from "@features/ui";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+import { AMOUT_ME } from "@utils/dataUtils";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const AboutSection = () => {
+  const textRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    gsap.from(textRef.current && textRef.current.children, {
+      scrollTrigger: {
+        trigger: textRef.current,
+        start: "top 70%",
+        end: "120% bottom",
+        scrub: 0.3,
+      },
+      opacity: 0.1,
+      stagger: 1,
+    });
+  });
+
   return (
     <section className={S.body}>
       <div className={S.body_wrapper}>
@@ -13,23 +36,9 @@ export const AboutSection = () => {
             <h4>
               <span>Oliver Boucher</span>, a frontend developer
             </h4>
-            <p>
-              Meet Oliver Boucher, a creative front-end developer who has forged
-              his own path through self-taught expertise and an unparalleled
-              passion for programming. With a meticulous eye for detail, Oliver
-              ensures that every project operates flawlessly. His proficiency
-              spans React, TypeScript, and SCSS, enabling him to craft
-              exceptional user experiences.
-              <br />
-              <br />
-              Oliver's interests aren't confined to the front-end; he delves
-              into back-end technologies, bringing a holistic approach to his
-              projects. Recently, he has developed a keen interest in web3,
-              exploring the cutting-edge of decentralized web technologies.
-              Oliver's dedication to continuous learning and innovation sets him
-              apart, making him a valuable asset in the ever-evolving world of
-              web development.
-            </p>
+            <h5 ref={textRef}>
+              <Splittext text={AMOUT_ME} word />
+            </h5>
           </div>
           <img src="./working.webp" alt="Working img" />
         </div>

@@ -1,4 +1,26 @@
 @use "@styles/globalStyles.scss" as G;
 
 .body {
+  width: 100%;
+
+  &_wrapper {
+    display: grid;
+    place-items: center;
+    max-width: 1440px;
+    margin: auto;
+    padding: 32px;
+
+    p {
+      font-family: "Rubik", sans-serif;
+      font-size: 14px;
+      color: white;
+
+      span {
+        font-family: "Dancing Script";
+        font-size: 20px;
+        color: #ff014f;
+        font-weight: 700;
+      }
+    }
+  }
 }

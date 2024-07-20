@@ -12,6 +12,26 @@
   place-items: center;
   z-index: 5000;
 
+  span {
+    font-size: 5rem;
+    text-align: center;
+    width: 100%;
+    font-family: "Bowlby One SC";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+
+    @include G.breakpoint("sm") {
+      font-size: 4rem;
+    }
+
+    @include G.breakpoint("xm") {
+      font-size: 2rem;
+    }
+  }
+
   .mainText {
     color: transparent;
     -webkit-text-stroke: 2px var(--loading-color);

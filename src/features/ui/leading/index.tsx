@@ -22,8 +22,8 @@ const Leading: FC<IProps> = ({ effect }) => {
         type="website"
       />
       <div className={S.body} ref={textRef}>
-        <h1 className={S.mainText}>Oliver Boucher</h1>
-        <h1 className={S.outline}>Oliver Boucher</h1>
+        <span className={S.mainText}>Oliver Boucher</span>
+        <span className={S.outline}>Oliver Boucher</span>
       </div>
     </>
   );

@@ -7,7 +7,7 @@ export const Header = () => {
     <div className={S.body}>
       <div className={S.wrapper}>
         <div className={S.logo}>
-          <img src="./logo.png" alt="" />
+          <img src="./logo.png" alt="Logo img" />
           <p id="logo">OVB</p>
         </div>
         <Navbar
@@ -21,7 +21,6 @@ export const Header = () => {
             { value: "about", label: "About" },
             { value: "service", label: "Services" },
             { value: "portfolio", label: "Portfolio" },
-            { value: "resume", label: "Resume" },
             { value: "contact", label: "Contact" },
           ]}
           root={S.root}

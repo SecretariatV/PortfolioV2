@@ -2,11 +2,13 @@ import S from "./index.module.scss";
 
 export const Footer = () => {
   return (
-    <div className={S.body}>
-      Footer
-      <a href="https://twitter.com/ovl" target="_blank">
-        Twitter
-      </a>
-    </div>
+    <footer className={S.body}>
+      <div className={S.body_wrapper}>
+        <p>
+          Copyright @ {new Date().getFullYear()} <span>Oliver</span>. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
   );
 };

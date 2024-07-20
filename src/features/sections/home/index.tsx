@@ -8,7 +8,7 @@ export const HomeSecton = () => {
       <div className={S.wrapper}>
         <div className={S.info}>
           <span id="back_title">welcome</span>
-          <h2>Hi, I'm Oliver</h2>
+          <h1>Hi, I'm Oliver</h1>
           <Typewriter
             texts={ABOUT_SELF_DATA}
             typingSpeed={0.1}

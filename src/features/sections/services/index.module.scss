@@ -5,12 +5,7 @@
   @include G.sectionPadding;
 
   &_wrapper {
-    display: grid;
-    place-items: center;
-    max-width: 1440px;
-    margin: auto;
-    grid-template-rows: auto 1fr;
-    gap: 48px;
+    @include G.wrapper;
   }
 
   &_services {

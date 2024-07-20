@@ -32,7 +32,7 @@ class ErrorBoundary extends Component<IProps, IState> {
     if (this.state.hasError) {
       return (
         <>
-          <h1>Something went wrong.</h1>
+          <h2>Something went wrong.</h2>
           <details className={S.details}>
             {this.state.error && this.state.error.toString()}
             <br />

@@ -34,7 +34,11 @@ const GlobalStyles = createGlobalStyle`
     --button-bg-primary: #040834;
     --button-bg-secondary: #ff014f;
 
-    --color-heading: #202942
+    --color-heading: #202942;
+
+    /** footer */
+    --footer-light-bg: #040836;
+    --footer-dark-bg: #003d63;
 }
 
 * {
@@ -55,6 +59,18 @@ body {
     #title::before {
         background-color: #0693e3;
     }
+
+    #forms {
+        background-color: #ffffff80;
+    }
+
+    #form-title {
+        color: black;
+    }
+
+    footer {
+        background-color: var(--footer-light-bg);
+    }
 }
 
 body:has(#toggle:checked) {
@@ -71,6 +87,18 @@ body:has(#toggle:checked) {
 
     #back_title{
         opacity: 0;
+    }
+
+    #forms {
+        background-color: #00000030;
+    }
+
+    #form-title {
+        color: white;
+    }
+
+    footer {
+        background-color: var(--footer-dark-bg);
     }
 }
 

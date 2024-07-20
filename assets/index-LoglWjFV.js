@@ -1,4 +1,4 @@
-import{d as me,r as H,j as rt}from"./index-DGMKxNsj.js";const Wr=me.div`
+import{d as me,r as H,j as rt}from"./index-8SybEGSi.js";const Wr=me.div`
   border-radius: 8px;
   background-color: ${({$bgColor:a})=>a};
   width: ${({$width:a})=>a};

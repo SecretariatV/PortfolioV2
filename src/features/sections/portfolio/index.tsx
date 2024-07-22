@@ -40,10 +40,16 @@ export const PortfolioSection = () => {
   }, [type]);
 
   return (
-    <section className={S.body}>
+    <section
+      className={S.body}
+      id="portfolio-section"
+      aria-labelledby="portfolio-title"
+    >
       <div className={S.body_wrapper}>
-        <span id="back_title">portfolio</span>
-        <h2>My Work</h2>
+        <span id="back_title" aria-hidden="true">
+          portfolio
+        </span>
+        <h2 id="portfolio-title">My Work</h2>
         <div className={S.body_portfolio}>
           <Navbar
             fullWidth={false}
@@ -61,6 +67,7 @@ export const PortfolioSection = () => {
             mask={S.body_portfolio_mask}
             tab={S.body_portfolio_tab}
             onChange={(e) => setType(e)}
+            aria-label="Portfolio category navigation"
           />
           <div className={S.body_portfolio_wrapper}>
             {PORTFOLIOS.map((data, index) => (
@@ -70,7 +77,9 @@ export const PortfolioSection = () => {
                 img={data.img}
                 id={data.id}
                 type={data.type}
+                live={data.live}
                 ref={(el) => (itemsRef.current[index] = el)}
+                aria-labelledby={`portfolio-item-${data.id}`}
               />
             ))}
           </div>

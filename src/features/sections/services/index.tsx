@@ -4,10 +4,16 @@ import { ServiceCard } from "@features/ui";
 
 export const ServiceSection = () => {
   return (
-    <section className={S.body}>
+    <section
+      className={S.body}
+      id="services-section"
+      aria-labelledby="services-title"
+    >
       <div className={S.body_wrapper}>
-        <span id="back_title">services</span>
-        <h2>What I do?</h2>
+        <span id="back_title" aria-hidden="true">
+          services
+        </span>
+        <h2 id="services-title">What I do?</h2>
         <div className={S.body_services}>
           {SERVICES_DATA.map((data, index) => (
             <ServiceCard

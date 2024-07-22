@@ -192,44 +192,44 @@ const AMOUT_ME: string =
 
 const PORTFOLIOS: IPortfolioType[] = [
   {
-    id: 0,
+    id: "portfolio",
     img: portfolio,
     title: "Portfolio",
     type: "project",
     live: "https://ovb-portfolio.vercel.app",
   },
   {
-    id: 2,
+    id: "covault",
     img: covault,
     title: "Covault",
     type: "web",
     live: "https://www.covault.xyz",
   },
   {
-    id: 3,
+    id: "pioneer-whitepaper",
     img: pioneerwhite,
     title: "Pioneer Whitepaper",
     type: "web",
     live: "https://www.pioneerlegends.com/",
   },
   {
-    id: 4,
+    id: "strangepeople",
     img: strangepeople,
     title: "Strange People",
     type: "web3",
     live: "https://www.pioneerlegends.com/",
   },
   {
-    id: 5,
+    id: "pomodoro-clock",
     img: pomodoro,
     title: "Pomodoro Clock",
     type: "project",
     live: "https://secretariatv.github.io/FM-Pomodoro",
   },
   {
-    id: 6,
+    id: "pioneer-legenes",
     img: pioneer,
-    title: "Pioneer regendary",
+    title: "Pioneer Legends",
     type: "web3",
     live: "https://www.pioneerlegends.io",
   },
@@ -239,14 +239,17 @@ const SOCIAL_LIST: ISocialProps[] = [
   {
     link: "mailto:oliver.b25.f@gmail.com",
     icon: <RiGoogleLine size={28} />,
+    name: "google",
   },
   {
     link: "https://github.com/SecretariatV",
     icon: <RiGithubLine size={28} />,
+    name: "github",
   },
   {
     link: "https://x.com/ovb_coder",
     icon: <RiTwitterXLine size={28} />,
+    name: "twitter",
   },
 ];
 

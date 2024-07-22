@@ -20,27 +20,33 @@ export const AboutSection = () => {
         scrub: 0.3,
       },
       opacity: 0.1,
-      stagger: 1,
+      stagger: 0.3,
     });
   });
 
   return (
-    <section className={S.body}>
+    <section
+      className={S.body}
+      id="about-section"
+      aria-labelledby="about-title"
+    >
       <div className={S.body_wrapper}>
         <div className={S.body_title}>
-          <span id="back_title">about me</span>
-          <h2>Know Me More</h2>
+          <span id="back_title" aria-hidden="true">
+            about me
+          </span>
+          <h2 id="about-title">Know Me More</h2>
         </div>
         <div className={S.body_info}>
           <div className={S.about}>
-            <h4>
+            <h4 id="about-title">
               <span>Oliver Boucher</span>, a frontend developer
             </h4>
-            <h5 ref={textRef}>
+            <h5 ref={textRef} aria-labelledby="about-title">
               <Splittext text={AMOUT_ME} word />
             </h5>
           </div>
-          <img src="./working.webp" alt="Working img" />
+          <img src="./working.webp" alt="Oliver working on a project" />
         </div>
       </div>
     </section>

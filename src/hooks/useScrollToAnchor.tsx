@@ -10,8 +10,6 @@ const useScrollToAnchor = () => {
       lastHash.current = location.hash.slice(1);
     }
 
-    console.log("lastHash.current", lastHash.current);
-
     if (lastHash.current && document.getElementById(lastHash.current)) {
       setTimeout(() => {
         const element = document.getElementById(lastHash.current);

@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import { FC, useEffect, useRef } from "react";
+import { FC, useRef } from "react";
 import S from "./index.module.scss";
 import { useGSAP } from "@gsap/react";
 import { TextPlugin } from "gsap/TextPlugin";

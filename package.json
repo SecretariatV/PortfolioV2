@@ -18,7 +18,7 @@
     "framer-motion": "^11.2.12",
     "gh-pages": "^6.1.1",
     "gsap": "^3.12.5",
-    "ovb-navbar": "^0.0.7",
+    "ovb-navbar": "^0.0.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.5",

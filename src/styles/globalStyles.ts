@@ -64,7 +64,7 @@ body {
         background-color: #ffffff80;
     }
 
-    #form-title {
+    .form-title {
         color: black;
     }
 
@@ -93,7 +93,7 @@ body:has(#toggle:checked) {
         background-color: #00000030;
     }
 
-    #form-title {
+    .form-title {
         color: white;
     }
 
@@ -142,6 +142,10 @@ h3 {
 .flex {
     display: flex;
     align-items: center;
+}
+
+.hidden {
+    opacity: 0;
 }
 `;
 

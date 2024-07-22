@@ -27,7 +27,6 @@ export const Typewriter: FC<IProps> = ({
 
     texts.forEach((text) => {
       const chars = text.split("");
-      console.log("test", text);
       tl.to(textRef.current, {
         duration: typingSpeed * chars.length,
         text: { value: text },
@@ -62,10 +61,6 @@ export const Typewriter: FC<IProps> = ({
       yoyo: true,
     });
   }, [texts, typingSpeed, pause, deletingSpeed]);
-
-  useEffect(() => {
-    console.log(textRef.current);
-  }, [textRef]);
 
   return (
     <div className={S.body}>

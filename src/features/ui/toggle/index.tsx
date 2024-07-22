@@ -5,16 +5,19 @@ export const Toggle = () => {
   const { send } = AppContext.useActorRef();
 
   return (
-    <span className={S.body}>
+    <div className={S.body}>
       <input
         type="checkbox"
         className={S.toggle}
         id="toggle"
+        name="toggle"
         onChange={(e) => send({ type: "TOGGLE", value: e.target.checked })}
+        aria-label="Toggle switch"
       />
       <label htmlFor="toggle" className={S.label}>
         <span className={S.labelBack} />
+        <span className="hidden">Toggle switch</span>
       </label>
-    </span>
+    </div>
   );
 };

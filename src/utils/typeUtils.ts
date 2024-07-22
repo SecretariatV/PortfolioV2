@@ -23,6 +23,11 @@ export interface ISkillType {
   icon: string;
 }
 
+export interface ISocialProps {
+  link: string;
+  icon: JSX.Element;
+}
+
 export interface IPortfolioType {
   id: number;
   img: string;

@@ -1,4 +1,6 @@
+import { SOCIAL_LIST } from "@utils/dataUtils";
 import S from "./index.module.scss";
+import { SocialButton } from "@features/ui";
 
 export const ContactSection = () => {
   return (
@@ -29,13 +31,13 @@ export const ContactSection = () => {
           <div className={S.contact_follow}>
             <span>Follow me</span>
             <div className={S.contact_follow_socials}>
-              <a
-                href="https://github.com/SecretariatV"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </a>
+              {SOCIAL_LIST.map((social, index) => (
+                <SocialButton
+                  key={index}
+                  link={social.link}
+                  icon={social.icon}
+                />
+              ))}
             </div>
           </div>
         </div>

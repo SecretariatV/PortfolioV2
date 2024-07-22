@@ -1,0 +1,11 @@
+.social {
+  svg {
+    color: var(--text-dark-secondary);
+  }
+
+  &:hover {
+    svg {
+      color: var(--text-light-secondary);
+    }
+  }
+}

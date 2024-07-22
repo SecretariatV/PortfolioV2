@@ -82,6 +82,7 @@
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 24px;
+    place-items: center;
 
     span {
       text-transform: uppercase;
@@ -94,7 +95,7 @@
     &_socials {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 24px;
     }
   }
 }

@@ -4,6 +4,7 @@ import {
   IPropsService,
   IRouterType,
   ISkillType,
+  ISocialProps,
 } from "./typeUtils";
 import reactIcon from "@assets/skills/react.webp";
 import tsIcon from "@assets/skills/typescript.webp";
@@ -31,6 +32,7 @@ import pioneerwhite from "@assets/projects/pioneer_doc.webp";
 import strangepeople from "@assets/projects/strangepeople.webp";
 import pomodoro from "@assets/projects/pomodoro.webp";
 import pioneer from "@assets/projects/pioneer.webp";
+import { RiGithubLine, RiGoogleLine, RiTwitterXLine } from "react-icons/ri";
 
 const LazyMainLayout = lazy(() => import("@features/layout/mainLayout"));
 const LazyHomePage = lazy(() => import("@pages/home"));
@@ -197,6 +199,21 @@ const PORTFOLIOS: IPortfolioType[] = [
   { id: 6, img: pioneer, title: "Pioneer regendary", type: "web3" },
 ];
 
+const SOCIAL_LIST: ISocialProps[] = [
+  {
+    link: "mailto:oliver.b25.f@gmail.com",
+    icon: <RiGoogleLine size={28} />,
+  },
+  {
+    link: "https://github.com/SecretariatV",
+    icon: <RiGithubLine size={28} />,
+  },
+  {
+    link: "https://x.com/ovb_coder",
+    icon: <RiTwitterXLine size={28} />,
+  },
+];
+
 export {
   PAGE_DATA,
   ABOUT_SELF_DATA,
@@ -204,4 +221,5 @@ export {
   SKILL_LIST,
   AMOUT_ME,
   PORTFOLIOS,
+  SOCIAL_LIST,
 };

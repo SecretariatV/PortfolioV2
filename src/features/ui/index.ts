@@ -5,3 +5,4 @@ export * from "./button";
 export * from "./serviceCard";
 export * from "./splitText";
 export * from "./portfolioCard";
+export * from "./socialButton";

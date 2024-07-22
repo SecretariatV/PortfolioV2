@@ -191,12 +191,48 @@ const AMOUT_ME: string =
   "Meet Oliver Boucher, a creative front-end developer who has forged his own path through self-taught expertise and an unparalleled passion for programming. With a meticulous eye for detail, Oliver ensures that every project operates flawlessly. His proficiency spans React, TypeScript, and SCSS, enabling him to craft exceptional user experiences. Oliver's interests aren't confined to the front-end; he delves into back-end technologies, bringing a holistic approach to his projects. Recently, he has developed a keen interest in web3, exploring the cutting-edge of decentralized web technologies. Oliver's dedication to continuous learning and innovation sets him apart, making him a valuable asset in the ever-evolving world of web development.";
 
 const PORTFOLIOS: IPortfolioType[] = [
-  { id: 0, img: portfolio, title: "Portfolio", type: "project" },
-  { id: 2, img: covault, title: "Covault", type: "web" },
-  { id: 3, img: pioneerwhite, title: "Pioneer Whitepaper", type: "web" },
-  { id: 4, img: strangepeople, title: "Strange People", type: "web3" },
-  { id: 5, img: pomodoro, title: "Pomodoro Clock", type: "project" },
-  { id: 6, img: pioneer, title: "Pioneer regendary", type: "web3" },
+  {
+    id: 0,
+    img: portfolio,
+    title: "Portfolio",
+    type: "project",
+    live: "https://ovb-portfolio.vercel.app",
+  },
+  {
+    id: 2,
+    img: covault,
+    title: "Covault",
+    type: "web",
+    live: "https://www.covault.xyz",
+  },
+  {
+    id: 3,
+    img: pioneerwhite,
+    title: "Pioneer Whitepaper",
+    type: "web",
+    live: "https://www.pioneerlegends.com/",
+  },
+  {
+    id: 4,
+    img: strangepeople,
+    title: "Strange People",
+    type: "web3",
+    live: "https://www.pioneerlegends.com/",
+  },
+  {
+    id: 5,
+    img: pomodoro,
+    title: "Pomodoro Clock",
+    type: "project",
+    live: "https://secretariatv.github.io/FM-Pomodoro",
+  },
+  {
+    id: 6,
+    img: pioneer,
+    title: "Pioneer regendary",
+    type: "web3",
+    live: "https://www.pioneerlegends.io",
+  },
 ];
 
 const SOCIAL_LIST: ISocialProps[] = [

@@ -33,4 +33,5 @@ export interface IPortfolioType {
   img: string;
   title: string;
   type: string;
+  live: string;
 }

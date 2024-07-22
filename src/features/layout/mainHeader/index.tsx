@@ -1,8 +1,11 @@
 import { Navbar } from "ovb-navbar";
 import S from "./index.module.scss";
 import { Toggle } from "@features/ui";
+import useScrollToAnchor from "@hooks/useScrollToAnchor";
 
 export const Header = () => {
+  useScrollToAnchor();
+
   return (
     <div className={S.body}>
       <div className={S.wrapper}>

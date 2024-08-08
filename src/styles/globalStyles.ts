@@ -39,6 +39,11 @@ const GlobalStyles = createGlobalStyle`
     /** footer */
     --footer-light-bg: #040836;
     --footer-dark-bg: #003d63;
+
+
+    --border: #dcdfe654;
+    --light-grey: #c6c6c6;
+    --black: #0f0f0f;
 }
 
 * {
@@ -46,6 +51,21 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     transform-style: preserve-3d;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    border: 1px solid var(--border);
+    background-color: var(--light-grey);
+}
+
+
+*::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    background-color: var(--button-bg-secondary);
 }
 
 body {

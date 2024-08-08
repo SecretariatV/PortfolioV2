@@ -26,12 +26,15 @@ export const ServiceSection = () => {
         </div>
         <div className={S.body_skills}>
           {SKILL_LIST.map((skill, index) => (
-            <img
-              key={index}
-              src={skill.icon}
-              alt={skill.title}
-              className={S.body_skills_img}
-            />
+            <div className={S.body_skill}>
+              <img
+                key={index}
+                src={skill.icon}
+                alt={skill.title}
+                className={S.body_skills_img}
+              />
+              <span className={S.name}>{skill.title}</span>
+            </div>
           ))}
         </div>
       </div>

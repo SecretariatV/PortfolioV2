@@ -12,8 +12,8 @@ const HomePage = () => {
     <div className={S.body}>
       <HomeSecton />
       <AboutSection />
-      {/* <ServiceSection />
-      <PortfolioSection />
+      <ServiceSection />
+      {/* <PortfolioSection />
       <ContactSection /> */}
     </div>
   );

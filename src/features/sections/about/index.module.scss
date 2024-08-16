@@ -1,12 +1,13 @@
-@use "@styles/globalStyles.scss" as G;
+@use "@styles/mixin" as *;
+@use "@styles/variables" as *;
 
 .body {
   width: 100%;
   background-color: rgba($color: #000000, $alpha: 0.2);
-  @include G.sectionPadding;
+  @include sectionPadding;
 
   &_wrapper {
-    @include G.wrapper;
+    @include wrapper;
   }
 
   &_title {
@@ -15,9 +16,13 @@
 
   &_info {
     display: grid;
-    grid-template-columns: 1fr 500px;
-    gap: 40px;
+    grid-template-columns: 1fr;
     font-family: "Rubik", sans-serif;
+
+    @include breakpoint("sm") {
+      grid-template-columns: 1fr 450px;
+      gap: 12px;
+    }
 
     h4 {
       font-size: 32px;
@@ -25,7 +30,7 @@
 
       span {
         font-weight: 800;
-        color: var(--button-bg-secondary);
+        color: $button-bg-secondary;
       }
     }
 

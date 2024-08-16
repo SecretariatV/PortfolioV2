@@ -87,7 +87,7 @@ p#logo {
   font-weight: 900;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 4rem;
+  font-size: 3rem;
   background-size: cover;
   background-position: center;
   -webkit-text-stroke: 1px $color-heading;
@@ -98,14 +98,16 @@ p#logo {
   opacity: 0.2;
   font-family: "Manrope", sans-serif;
   user-select: none;
+  top: -20px;
 
   @include breakpoint("xm") {
     font-size: 5rem;
-    top: -60px;
+    top: -40px;
   }
 
   @include breakpoint("md") {
     font-size: 6rem;
+    top: -60px;
   }
 }
 
@@ -125,8 +127,16 @@ h1 {
 
 h2 {
   font-family: "Bowlby One SC";
-  font-size: 60px;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 900;
+
+  @include breakpoint("xm") {
+    font-size: 3rem;
+  }
+
+  @include breakpoint("md") {
+    font-size: 4rem;
+  }
 }
 
 h3 {

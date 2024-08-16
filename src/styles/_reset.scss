@@ -1,0 +1,145 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  border: 1px solid $border;
+  background-color: $light-grey;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-clip: content-box;
+  background-color: $button-bg-secondary;
+}
+
+body {
+  background: url("/white.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  color: $text-light-primary;
+
+  #title::before {
+    background-color: #0693e3;
+  }
+
+  #forms {
+    background-color: #ffffff80;
+  }
+
+  .form-title {
+    color: black;
+  }
+
+  footer {
+    background-color: $footer-light-bg;
+  }
+}
+
+body:has(#toggle:checked) {
+  background: url("/dark.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  color: $text-dark-primary;
+
+  #title::before {
+    background-color: $button-bg-secondary;
+  }
+
+  #back_title {
+    opacity: 0;
+  }
+
+  #forms {
+    background-color: #00000030;
+  }
+
+  .form-title {
+    color: white;
+  }
+
+  footer {
+    background-color: $footer-dark-bg;
+  }
+}
+
+p#logo {
+  font-family: "Dancing Script";
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#back_title {
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  background-size: cover;
+  background-position: center;
+  -webkit-text-stroke: 1px $color-heading;
+  position: absolute;
+  text-wrap: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.2;
+  font-family: "Manrope", sans-serif;
+  user-select: none;
+
+  @include breakpoint("xm") {
+    font-size: 5rem;
+    top: -60px;
+  }
+
+  @include breakpoint("md") {
+    font-size: 6rem;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Bowlby One SC";
+  font-weight: 900;
+
+  @include breakpoint("xm") {
+    font-size: 3rem;
+  }
+
+  @include breakpoint("md") {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-family: "Bowlby One SC";
+  font-size: 60px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.hidden {
+  opacity: 0;
+}

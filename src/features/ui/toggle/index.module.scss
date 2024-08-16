@@ -1,12 +1,12 @@
-@use "@styles/globalStyles.scss" as G;
+@use "@styles/variables" as *;
 
 .body {
   .toggle {
     display: none;
 
     &:checked + .label {
-      background-color: var(--indigo-color);
-      border-color: var(--indigo-border);
+      background-color: $indigo-color;
+      border-color: $indigo-border;
 
       & > .labelBack {
         left: 15px;
@@ -27,8 +27,8 @@
       }
 
       &::before {
-        background-color: var(--white);
-        border-color: var(--gray-border);
+        background-color: $white;
+        border-color: $gray-border;
         animation: switch 350ms forwards;
       }
 
@@ -42,9 +42,9 @@
   .label {
     width: 60px;
     height: 30px;
-    background-color: var(--blue-color);
+    background-color: $blue-color;
     border-radius: 100px;
-    border: 2px solid var(--blue-border);
+    border: 2px solid $blue-border;
     display: flex;
     position: relative;
     transition: all 350ms ease-in;
@@ -56,12 +56,12 @@
       content: "";
       width: 18px;
       height: 18px;
-      border: 2px solid var(--yellow-border);
+      border: 2px solid $yellow-border;
       top: 2px;
       left: 0px;
       position: absolute;
       border-radius: 82px;
-      background-color: var(--yellow-background);
+      background-color: $yellow-background;
     }
 
     &::after {
@@ -69,8 +69,7 @@
       transition: all 250ms ease-in;
       position: absolute;
       content: "";
-      box-shadow: var(--gray-dots) -10px 0 0 2px,
-        var(--gray-dots) -15px 7px 0 0px;
+      box-shadow: $gray-dots -10px 0 0 2px, $gray-dots -15px 7px 0 0px;
       left: 53px;
       top: 10px;
       width: 4px;
@@ -86,7 +85,7 @@
     height: 3px;
     border-radius: 3px;
     position: relative;
-    background-color: var(--white);
+    background-color: $white;
     left: 37px;
     top: 12px;
     transition: all 150ms ease-in;
@@ -98,7 +97,7 @@
       width: 15px;
       height: 3px;
       border-radius: 3px;
-      background-color: var(--white);
+      background-color: $white;
       transition: all 150ms ease-in;
     }
 

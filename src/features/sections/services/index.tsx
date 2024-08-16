@@ -21,14 +21,14 @@ export const ServiceSection = () => {
               title={data.title}
               icon={data.icon}
               content={data.content}
+              aria-label={`${data.title} service`}
             />
           ))}
         </div>
         <div className={S.body_skills}>
           {SKILL_LIST.map((skill, index) => (
-            <div className={S.body_skill}>
+            <div className={S.body_skill} key={index}>
               <img
-                key={index}
                 src={skill.icon}
                 alt={skill.title}
                 className={S.body_skills_img}

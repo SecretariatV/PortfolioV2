@@ -2,9 +2,9 @@
 
 .body {
   width: 100%;
-  @include G.sectionPadding;
   background-color: rgba($color: #000000, $alpha: 0.2);
   overflow: hidden;
+  @include G.sectionPadding;
 
   &_wrapper {
     @include G.wrapper;

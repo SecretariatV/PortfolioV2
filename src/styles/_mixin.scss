@@ -1,6 +1,6 @@
 $breakpoints: (
   "xxm": 360px,
-  "xm": 540px,
+  "xm": 640px,
   "sm": 768px,
   "md": 1024px,
   "lg": 1280px,
@@ -22,6 +22,14 @@ $breakpoints: (
 @mixin sectionPadding {
   padding: 16px;
 
+  @include breakpoint("xm") {
+    padding: 40px;
+  }
+
+  @include breakpoint("sm") {
+    padding: 60px 40px 60px;
+  }
+
   @include breakpoint("md") {
     padding: 120px 40px 60px;
   }
@@ -30,8 +38,7 @@ $breakpoints: (
 @mixin wrapper {
   display: grid;
   place-items: center;
-  max-width: 1440px;
-  margin: auto;
   grid-template-rows: auto 1fr;
   gap: 48px;
+  @include mainLayout;
 }

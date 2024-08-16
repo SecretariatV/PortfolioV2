@@ -3,10 +3,10 @@ import styled from "styled-components";
 const Container = styled.button`
   color: white;
   border-radius: 100px;
-  background-color: var(--button-bg-primary);
+  background-color: #040834;
   border: 0;
   outline: none;
-  padding: 16px 52px;
+  padding: 12px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -19,7 +19,7 @@ const Container = styled.button`
     top: 0;
     left: 0;
     transform: translateX(-100%);
-    background-color: var(--button-bg-secondary);
+    background-color: #ff014f;
     transition: transform ease-in-out 0.4s;
   }
 
@@ -33,6 +33,9 @@ const Container = styled.button`
     font-size: 18px;
     position: relative;
     z-index: 2;
+  }
+  @media (min-width: 640px) {
+    padding: 16px 52px;
   }
 `;
 

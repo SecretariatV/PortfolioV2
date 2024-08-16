@@ -11,10 +11,10 @@ const HomePage = () => {
   return (
     <div className={S.body}>
       <HomeSecton />
-      <AboutSection />
+      {/* <AboutSection />
       <ServiceSection />
       <PortfolioSection />
-      <ContactSection />
+      <ContactSection /> */}
     </div>
   );
 };

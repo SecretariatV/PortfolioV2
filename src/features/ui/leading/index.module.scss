@@ -1,4 +1,5 @@
-@use "@styles/globalStyles.scss" as G;
+@use "@styles/variables" as *;
+@use "@styles/mixin" as *;
 
 .body {
   position: fixed;
@@ -7,13 +8,13 @@
   right: 0;
   bottom: 0;
   height: 100vh;
-  background-color: var(--loading-bg);
+  background-color: $loading-bg;
   display: grid;
   place-items: center;
   z-index: 5000;
 
   span {
-    font-size: 5rem;
+    font-size: 2rem;
     text-align: center;
     width: 100%;
     font-family: "Bowlby One SC";
@@ -23,22 +24,22 @@
     left: 50%;
     transform: translate(-50%, -80%);
 
-    @include G.breakpoint("sm") {
-      font-size: 4rem;
+    @include breakpoint("xm") {
+      font-size: 3rem;
     }
 
-    @include G.breakpoint("xm") {
-      font-size: 2rem;
+    @include breakpoint("sm") {
+      font-size: 5rem;
     }
   }
 
   .mainText {
     color: transparent;
-    -webkit-text-stroke: 2px var(--loading-color);
+    -webkit-text-stroke: 2px $loading-color;
   }
 
   .outline {
-    color: var(--loading-color);
+    color: $loading-color;
     animation: animate 4s ease-in-out infinite;
   }
 }

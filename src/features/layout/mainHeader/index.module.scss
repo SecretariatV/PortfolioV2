@@ -1,7 +1,7 @@
-@use "@styles/globalStyles.scss" as G;
+@use "@styles/mixin" as *;
 
 .body {
-  height: 80px;
+  height: 60px;
   width: 100%;
   position: sticky;
   top: 0;
@@ -9,13 +9,21 @@
   backdrop-filter: blur(10px);
   background-color: #00000006;
 
+  @include breakpoint("sm") {
+    height: 80px;
+  }
+
   .wrapper {
-    @include G.mainLayout;
-    padding: 16px 32px;
+    padding: 0 32px;
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 1fr auto;
     align-items: center;
     height: 100%;
+    @include mainLayout;
+
+    @include breakpoint("md") {
+      grid-template-columns: auto 1fr auto;
+    }
 
     .logo {
       cursor: pointer;
@@ -45,5 +53,14 @@
       letter-spacing: 0.02em;
       transition: color 0.3s ease-in-out;
     }
+  }
+}
+
+.navbar {
+  display: none;
+  justify-self: center;
+
+  @include breakpoint("md") {
+    display: block;
   }
 }

@@ -1,17 +1,22 @@
-@use "@styles/globalStyles.scss" as G;
+@use "@styles/mixin" as *;
 
 .body {
   width: 100%;
-  @include G.sectionPadding;
+  @include sectionPadding;
 
   .wrapper {
-    max-width: 1440px;
-    margin: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    @include mainLayout;
+
+    @include breakpoint("sm") {
+      grid-template-columns: 3fr 2fr;
+      gap: 16px;
+    }
 
     .info {
       align-self: center;
+
       h2 {
         margin-bottom: 20px;
       }
@@ -22,10 +27,19 @@
     }
 
     &_avatar {
-      width: 400px;
+      display: none;
       aspect-ratio: 1/1;
       border-radius: 100%;
       justify-self: center;
+
+      @include breakpoint("sm") {
+        display: block;
+        width: 300px;
+      }
+
+      @include breakpoint("md") {
+        width: 400px;
+      }
     }
   }
 }

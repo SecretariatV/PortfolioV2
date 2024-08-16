@@ -1,11 +1,13 @@
+@use "@styles/variables" as *;
+
 .social {
   svg {
-    color: var(--text-dark-secondary);
+    color: $text-dark-secondary;
   }
 
   &:hover {
     svg {
-      color: var(--text-light-secondary);
+      color: $text-light-secondary;
     }
   }
 }

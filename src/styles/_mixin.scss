@@ -20,14 +20,14 @@ $breakpoints: (
 }
 
 @mixin sectionPadding {
-  padding: 16px;
+  padding: 32px;
 
   @include breakpoint("xm") {
-    padding: 40px;
+    padding: 60px;
   }
 
   @include breakpoint("sm") {
-    padding: 60px 40px 60px;
+    padding: 80px 40px 60px;
   }
 
   @include breakpoint("md") {
@@ -39,6 +39,14 @@ $breakpoints: (
   display: grid;
   place-items: center;
   grid-template-rows: auto 1fr;
-  gap: 48px;
+  gap: 24px;
   @include mainLayout;
+
+  @include breakpoint("sm") {
+    gap: 36px;
+  }
+
+  @include breakpoint("md") {
+    gap: 48px;
+  }
 }

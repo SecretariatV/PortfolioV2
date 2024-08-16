@@ -1,13 +1,14 @@
 @use "@styles/globalStyles.scss" as G;
+@use "@styles/mixin" as *;
 
 .body {
   width: 100%;
   background-color: rgba($color: #000000, $alpha: 0.2);
   overflow: hidden;
-  @include G.sectionPadding;
+  @include sectionPadding;
 
   &_wrapper {
-    @include G.wrapper;
+    @include wrapper;
   }
 
   &_portfolio {
@@ -18,8 +19,12 @@
 
     &_wrapper {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 20px;
+
+      @include breakpoint("xm") {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      }
     }
 
     &_root,

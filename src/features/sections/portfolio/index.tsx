@@ -53,7 +53,7 @@ export const PortfolioSection = () => {
         <div className={S.body_portfolio}>
           <Navbar
             fullWidth={false}
-            width={500}
+            width={300}
             height={40}
             activeColor="var(--button-bg-secondary)"
             color="#000"

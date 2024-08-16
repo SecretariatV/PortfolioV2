@@ -13,8 +13,8 @@ const HomePage = () => {
       <HomeSecton />
       <AboutSection />
       <ServiceSection />
-      {/* <PortfolioSection />
-      <ContactSection /> */}
+      <PortfolioSection />
+      {/* <ContactSection /> */}
     </div>
   );
 };

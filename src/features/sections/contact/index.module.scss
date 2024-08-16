@@ -1,19 +1,27 @@
-@use "@styles/globalStyles.scss" as G;
+@use "@styles/mixin" as *;
 
 .body {
   width: 100%;
-  @include G.sectionPadding;
+  @include sectionPadding;
 
   &_wrapper {
-    @include G.wrapper;
+    @include wrapper;
   }
 }
 
 .contact {
   display: grid;
-  grid-template-columns: 1fr 550px;
+  grid-template-columns: 1fr;
   gap: 40px;
   width: 100%;
+
+  @include breakpoint("sm") {
+    grid-template-columns: 1fr 250px;
+  }
+
+  @include breakpoint("md") {
+    grid-template-columns: 1fr 450px;
+  }
 
   &_forms {
     padding: 60px;

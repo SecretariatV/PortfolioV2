@@ -20,7 +20,7 @@
     font-family: "Rubik", sans-serif;
 
     @include breakpoint("sm") {
-      grid-template-columns: 1fr 450px;
+      grid-template-columns: 1fr 300px;
       gap: 12px;
     }
 

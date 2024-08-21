@@ -56,7 +56,7 @@ export const PortfolioSection = () => {
             width={300}
             height={40}
             activeColor="var(--button-bg-secondary)"
-            color="#000"
+            color="#ff014f"
             dataLists={[
               { value: "all", label: "All" },
               { value: "web", label: "Web" },

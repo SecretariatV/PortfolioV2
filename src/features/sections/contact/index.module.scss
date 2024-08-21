@@ -24,10 +24,22 @@
   }
 
   &_forms {
-    padding: 60px;
+    padding: 16px;
     display: grid;
     grid-template-areas: "title title" "name email" "talk talk";
     gap: 32px;
+
+    @include breakpoint("xm") {
+      padding: 32px;
+    }
+
+    @include breakpoint("sm") {
+      padding: 48px;
+    }
+
+    @include breakpoint("md") {
+      padding: 60px;
+    }
 
     span {
       grid-area: title;

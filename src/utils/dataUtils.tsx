@@ -247,7 +247,7 @@ const SOCIAL_LIST: ISocialProps[] = [
     name: "github",
   },
   {
-    link: "https://x.com/ovb_coder",
+    link: "https://x.com/Lamoerey",
     icon: <RiTwitterXLine size={28} />,
     name: "twitter",
   },

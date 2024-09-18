@@ -16,9 +16,10 @@
   .wrapper {
     padding: 0 32px;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr auto auto;
     align-items: center;
     height: 100%;
+    gap: 16px;
     @include mainLayout;
 
     @include breakpoint("md") {

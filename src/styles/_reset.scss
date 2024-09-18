@@ -45,6 +45,10 @@ body {
   footer {
     background-color: $footer-light-bg;
   }
+
+  #hamburger-line {
+    background-color: $text-light-primary;
+  }
 }
 
 body:has(#toggle:checked) {
@@ -73,6 +77,10 @@ body:has(#toggle:checked) {
 
   footer {
     background-color: $footer-dark-bg;
+  }
+
+  #hamburger-line {
+    background-color: $white;
   }
 }
 

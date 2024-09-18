@@ -1,6 +1,6 @@
 import { Navbar } from "ovb-navbar";
 import S from "./index.module.scss";
-import { Toggle } from "@features/ui";
+import { HamburgerButton, Toggle } from "@features/ui";
 import useScrollToAnchor from "@hooks/useScrollToAnchor";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
@@ -77,6 +77,7 @@ export const Header = () => {
           />
         </div>
         <Toggle />
+        <HamburgerButton />
       </div>
     </div>
   );
